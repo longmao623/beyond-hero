@@ -1,0 +1,7 @@
+html = open('dist/single-file.html', encoding='utf-8').read()
+print('has script module:', '<script type="module">' in html)
+print('has style tag:', '<style>' in html)
+print('has data:image/png:', 'data:image/png' in html)
+print('has external css link:', '<link rel="stylesheet"' in html)
+print('has external js:', '<script src=' in html)
+print('size chars:', len(html))
